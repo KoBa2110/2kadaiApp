@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var viewController2 = segue.destinationViewController as! ViewController2
+        let viewController2 = segue.destinationViewController as! ViewController2
         viewController2.text1 = textField1.text
         
     }
